@@ -7,6 +7,8 @@ int main()
        int c;
     int (*p)(int,int);
     p= &Add;
+    //p=Add;
+    //c=p(3,2);
     c = (*p)(3,2);
     printf("Addition is %d",c);
     
