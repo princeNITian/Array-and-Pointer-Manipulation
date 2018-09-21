@@ -14,3 +14,65 @@ int main()
 char C[20] ="Hello";
 print(C);
 }
+
+/*This is the same code that above is.*/
+
+/*
+#include <stdio.h>
+void print(char* C)
+{
+   int i = 0;
+   while(*(C+i)!='\0')
+   {
+    printf("%c",C[i]);
+    i++;
+}
+printf("\n");
+}
+int main()
+{
+char C[20] ="Hello";
+print(C);
+}
+*/
+
+/*This is another way to use the above code*/
+/*
+#include <stdio.h>
+void print(char* C)
+{
+   int i = 0;
+   while(*C!='\0')
+   {
+    printf("%c",C[i]);
+    C++;
+}
+printf("\n");
+}
+int main()
+{
+char C[20] ="Hello";
+print(C);
+}
+*/
+
+/** The same code **/
+
+/* 
+#include <stdio.h>
+void print(char* C)
+{
+   int i = 0;
+   while(*C!='\0')
+   {
+    printf("%c",*C);
+    C++;
+}
+printf("\n");
+}
+int main()
+{
+char C[20] ="Hello";
+print(C);
+}
+*/
