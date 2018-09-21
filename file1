@@ -1,0 +1,74 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int *p;
+    a=5;
+    p=&a;
+    printf("%d,%d,%d,%d,%d",p,&a,&p,a,*p);
+    printf("\n");
+    int *ptr=&a;
+    printf("%d,%d,%d,%d,%d",ptr,&a,&ptr,a,*ptr);
+    printf("\n");
+    int *k,b[4]={1,2,3,4};
+    for(int i=0;i<4;i++){
+        k=&b[i];
+        printf("%d ,",*k);
+    
+        
+    }
+    printf("\n");
+ int *j,c[3]={7,8,9};
+ j=c;
+ for(int i =0;i<3;i++)
+ {
+
+   
+    printf("%d ",*j);
+     j++;
+ }
+ int *p1,*p2;
+ int k1,k2;
+ p1=&k1;
+ p2=&k2;
+printf("\n%d %d",p1,p2);
+p1=p2;
+printf("\n%d,%d",p1,p2);
+printf("\n");
+*p=33;
+printf("%d %d",a,*p);
+
+printf("\n");
+int *pr,pa[3]={11,22,33};
+pr=pa;
+printf("%d\n%d\n%d\n%d",pa,pa+1,pa[0],pa[1]);
+printf("\n");
+char ch[5];
+ch[0]='J';
+ch[1]='O';
+ch[2]='H';
+ch[3]='N';
+ch[4]='\0';
+
+printf("%s",ch);
+printf("\n");
+for(int i=0;i<4;i++)
+printf("%c",ch[i]);
+
+
+
+
+
+
+
+    return 0;
+}
